@@ -300,12 +300,12 @@ def auto_trade(symbols):
                 if buy_signal and close_price:
                     alert_message = f"🚀 BUY Signal for {symbol} at ₹{close_price}"
                     logging.info(alert_message)
-                    send_telegram_message(alert_message)
+                    send_telegram_alert(alert_message)
 
                 elif sell_signal and close_price:
                     alert_message = f"⚠️ SELL Signal for {symbol} at ₹{close_price}"
                     logging.info(alert_message)
-                    send_telegram_message(alert_message)
+                    send_telegram_alert(alert_message)
 
             time.sleep(5)  # Sleep to avoid API rate limits
 
