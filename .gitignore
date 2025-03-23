@@ -8,3 +8,4 @@ __pycache__/
 
 # Ignore system files
 .DS_Store
+AWS/ANX_AWS_accessKeys.csv
